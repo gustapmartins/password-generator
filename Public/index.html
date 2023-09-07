@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Marcosloppes" />
+    <link rel="stylesheet" href="Styles/style.css">
+    <title>Gerador de senha</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h2>Gerador de senhas</h2>
+        <input title="Senha" class="content" id="result" type="text" />
+        <div class="content">
+            <label>Tamanho </label>
+            <input title="Tamanho" id="passLenght" type="number" min="4" max="20" value="8" />
+        </div>
+        <div class="box">
+            <div class="content">
+                <label>Letra maiúscula </label>
+                <input title="Letra maiúscula" data-id="upperCase" type="checkbox" />
+            </div>
+            <div class="content">
+                <label> Letra minúscula </label>
+                <input title="Letra minúscula" data-id="lowerCase" type="checkbox" />
+            </div>
+            <div class="content">
+                <label> Números </label>
+                <input title="Números" data-id="number" type="checkbox" />
+            </div>
+            <div class="content">
+                <label> Símbolos </label>
+                <input title="Símbolos" data-id="symbols" type="checkbox" />
+            </div>
+        </div>
+        <div class="content">
+            <button id="btnGenerate" class="btn btn--green">
+                <i class="fas fa-key"></i>Gerar
+            </button>
+            <button id="btnCopy" class="btn btn--blue">
+                <i class="far fa-copy"></i>Copiar
+            </button>
+        </div>
+
+    </div>
+    
+    <script src="https://kit.fontawesome.com/f223593715.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="Js/main.js"></script>
+</body>
+</html>
